@@ -1,0 +1,1 @@
+[[ -f /emscripten/emsdk_env.sh ]] && . /emscripten/emsdk_env.sh
