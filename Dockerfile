@@ -8,7 +8,7 @@ RUN apt-get update && \
     tar --strip-components=1 -xzvf emsdk-portable.tar.gz && \
     rm emsdk-portable.tar.gz && \
     ./emsdk update && \
-    apt-get clean
+    rm -rf /var/lib/apt/lists/*
 
 COPY emsdk.sh /etc/profile.d/emsdk.sh
 WORKDIR /
