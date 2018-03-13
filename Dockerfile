@@ -7,7 +7,6 @@ RUN apt-get update && \
     wget https://s3.amazonaws.com/mozilla-games/emscripten/releases/emsdk-portable.tar.gz && \
     tar --strip-components=1 -xzvf emsdk-portable.tar.gz && \
     rm emsdk-portable.tar.gz && \
-    ./emsdk update && \
     rm -rf /var/lib/apt/lists/*
 
 COPY emsdk.sh /etc/profile.d/emsdk.sh
